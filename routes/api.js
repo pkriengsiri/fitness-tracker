@@ -38,6 +38,7 @@ Router.put("/api/workouts/:id", (req, res) => {
 // GET route to return the last 7 workouts
 Router.get("/api/workouts/range", (req,res) => {
   Workout.find({})
+  .sort({"day": -1})
   .limit(7)
   .then((workouts) => {
     res.json(workouts);
