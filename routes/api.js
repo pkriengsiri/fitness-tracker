@@ -35,9 +35,10 @@ Router.put("/api/workouts/:id", (req, res) => {
       });
 });
 
-// GET route to all workouts
+// GET route to return the last 7 workouts
 Router.get("/api/workouts/range", (req,res) => {
   Workout.find({})
+  .limit(7)
   .then((workouts) => {
     res.json(workouts);
   })
