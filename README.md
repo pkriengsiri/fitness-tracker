@@ -2,7 +2,7 @@
 An app for tracking daily workouts
 
 ## Description
-This application is tool for tracking workouts, with separate fields for both cardio or resistance based routines.  The front-end was prebuilt in our class assignment materials using HTML, JavaScript, jQuery, chart.JS, CSS, and Bootstrap.  The back-end consists of node.js, Express, MongoDB, and Mongoose ODM.
+This application is tool for tracking workouts, supporting both cardio or resistance based exercises.  The front-end was prebuilt in our class assignment materials using HTML, JavaScript, jQuery, chart.JS, CSS, and Bootstrap.  The back-end consists of node.js, Express, MongoDB, and Mongoose ODM.
 
 ### Functionality
 * Create a new workout
