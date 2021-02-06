@@ -1,3 +1,4 @@
+// Dependencies
 const express = require("express");
 const Workout = require("../models/Workout");
 const Router = express.Router();
@@ -45,4 +46,5 @@ Router.get("/api/workouts/range", (req,res) => {
   })
 });
 
+// Export
 module.exports = Router;
