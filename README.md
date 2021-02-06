@@ -80,8 +80,10 @@ SOFTWARE.
 No contributions are being accepted at this time.
   
 ## Badges
-
-
+[![GitHub issues](https://img.shields.io/github/issues/pkriengsiri/fitness-tracker)](https://github.com/pkriengsiri/fitness-tracker/issues)
+[![GitHub forks](https://img.shields.io/github/forks/pkriengsiri/fitness-tracker)](https://github.com/pkriengsiri/fitness-tracker/network)
+[![GitHub stars](https://img.shields.io/github/stars/pkriengsiri/fitness-tracker)](https://github.com/pkriengsiri/fitness-tracker/stargazers)
+[![GitHub license](https://img.shields.io/github/license/pkriengsiri/fitness-tracker)](https://github.com/pkriengsiri/fitness-tracker/blob/main/LICENSE)
 
 ## Questions
 Contact me via [email](mailto:pkriengsiri@gmail.com).
