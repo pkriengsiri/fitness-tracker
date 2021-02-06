@@ -37,7 +37,7 @@ app.use(require("./routes/api.js"));
 app.use(require("./routes/views.js"));
 
 // Listen to ports
-if(process.env.port) {
+if(process.env.PORT) {
   app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
   });
