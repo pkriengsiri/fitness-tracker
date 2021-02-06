@@ -41,11 +41,8 @@ const WorkoutSchema = new Schema(
   }
 );
 
+// Add a virtual field the calculates the total duration for the workout
 WorkoutSchema.virtual("totalDuration").get(function () {
-  // return this.email.slice(this.email.indexOf('@') + 1);
-  // const array = this.exercises;
-  // const reducer = (accumulator, exercise) => accumulator + exercise.duration;
-
   return this.exercises.reduce(
     (accumulator, exercise) => accumulator + exercise.duration, 0
   );
