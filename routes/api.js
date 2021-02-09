@@ -10,14 +10,18 @@ Router.get("/api/workouts", (req, res) => {
   .limit(1)
   .then((workout) => {
     res.json(workout);
-  });
+  }).catch((err) => {
+    res.json(err);
+  });;
 });
 
 // POST route to create a workout
 Router.post("/api/workouts/", (req, res) => {
   Workout.create(req.body).then((workout) => {
     res.json(workout);
-  });
+  }).catch((err) => {
+    res.json(err);
+  });;
 });
 
 // PUT route to add an exercise to a workout
@@ -32,7 +36,7 @@ Router.put("/api/workouts/:id", (req, res) => {
         res.json(workout);
       })
       .catch((err) => {
-        console.log(err);
+        res.json(err);
       });
 });
 
@@ -43,7 +47,9 @@ Router.get("/api/workouts/range", (req,res) => {
   .limit(7)
   .then((workouts) => {
     res.json(workouts);
-  })
+  }).catch((err) => {
+    res.json(err);
+  });
 });
 
 // Export
