@@ -27,8 +27,6 @@ Router.post("/api/workouts/", (req, res) => {
 // PUT route to add an exercise to a workout
 Router.put("/api/workouts/:id", (req, res) => {
   const id = req.params.id;
-  console.log(req.body);
-
     Workout.findByIdAndUpdate(id, {
       $push: {exercises: req.body}
     })
